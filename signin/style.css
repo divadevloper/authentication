@@ -53,10 +53,10 @@ h3,p{
 .baby label{
     display: block;
     margin-top: 20px;
-    margin-right: 70px;
+    margin-right: 140px;
     color: white;
     align-items: end;
-    padding-right: 90px;
+    /* padding-right: 90px; */
     line-height: 10px;
     
 }
@@ -74,6 +74,21 @@ input:hover{
 }
 ::placeholder{
     padding-left: 10px;
+}
+#passwordclass{
+    border-radius: 40px;
+    width: 80%;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    outline: none;
+    background-color: white;
+}
+#Confirmpass{
+    width: 80%;
+    height: 30px;
+    outline: none;
 }
 .mmm{
     background-color: rgb(136,109,250);

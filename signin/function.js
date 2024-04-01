@@ -61,7 +61,7 @@ function show() {
 }
 function shows() {
   Confirmpass.type == 'password' ? Confirmpass.type = 'text' : Confirmpass.type = "password"
-  hideandshowconrfirm.innerHTML == "show" ? hideandshowconrfirm.innerHTML = 'hide' : hideandshowconrfirm.innerHTML = 'show'
+  hideandshowconrfirm.innerHTML == `<i class="fa-solid fa-eye"></i>` ? hideandshowconrfirm.innerHTML = `<i class="fa-solid fa-eye-slash"></i>` : hideandshowconrfirm.innerHTML = `<i class="fa-solid fa-eye"></i>`
 }
 
 let tableDisplay = () => {
