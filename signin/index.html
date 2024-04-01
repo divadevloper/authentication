@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sub-container">
+            <div class="ytrew">
+                <div class="image">
+                    <img src="images-removebg-preview.png" alt="">
+                    <h3> Registration</h3>
+                    <p> Join the culinary adventure! Sign up on <strong> MOJO</strong> now. </p>
+                </div>
+
+                <div class="baby">
+                    <label for="text"> Full Name</label>
+                    <input id="fullname" type="text" placeholder=" Enter your Full Name here!" required>
+                </div>
+                <div class="baby">
+                    <label for="email"> Email address</label>
+                    <input id="email" type="email" placeholder="Enter your email here" required>
+                </div>
+                <div class="baby">
+                    <label for="password">Password</label>
+                    <div>
+                        <input id="password" type="password" placeholder=" Enter your password here" required>
+                        <button>
+                            <button id="hideansshow" onclick="show()">show</button>
+
+                        </button>
+                    </div>
+                </div>
+                <div class="baby">
+                    <label for="Confirmpass"> Confirm Password</label>
+                    <div>
+                        <input id="Confirmpass" type="password" placeholder=" Confirm Password" required>
+                        <button id="hideandshowconrfirm" onclick="shows()">show</button>
+                    </div>
+                </div>
+                <div id="agree">
+                    <input id="checkbox" name="box" type="checkbox">
+                    <span>I accept the <a href="#">Terms of Use </a>& <a href="#">Privacy Policy</a></span>
+                </div>
+                <div class="baby">
+                    <button onclick="register()" class="mmm"> Register </button>
+                </div>
+                <div class="emm">
+                    <p>Already have an Account? </p>
+                    <a href="../login/index.html"> <b>Login here </b></a>
+                </div>
+            </div>
+            <div class="second">
+                <table id="tablecontent">
+
+                    <thead>
+                        <th> fullname</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>checkbox</th>
+                    </thead>
+
+                    <tbody id="tables">
+
+                    </tbody>
+            </div>
+            </table>
+        </div>
+
+    </div>
+</body>
+
+</html>
+<script src="function.js "></script>
