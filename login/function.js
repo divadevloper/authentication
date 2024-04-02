@@ -1,11 +1,11 @@
-let userdatas = JSON.parse(localStorage.getItem('userdatas'))
-console.log(userdatas)
 let input1 = document.getElementById("input1");
 let password1 = document.getElementById('password1')
+let userdatas = JSON.parse(localStorage.getItem('userdatas'))
+console.log(userdatas)
 
 
 function Login() {
-    let logIn = userdatas.find(userdatas => userdatas.email == input1.value || userdatas.password == password1.value)
+    let logIn = userdatas.find(user => user.email == input1.value && user.password == password1.value)
    
     if (input1.value == "" || password1.value == "") {
         alert("Please fill out both email and password fields or sign up if you haven't already.")
