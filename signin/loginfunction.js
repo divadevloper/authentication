@@ -11,6 +11,7 @@ function Login() {
         alert("Please fill out both email and password fields or sign up if you haven't already.")
     } else if (logIn) {
         alert(`Login Sucessfull ${input1.value}`)
+        window.location.href = "dash.html"
     } else {
         alert('Account not registered')
     }

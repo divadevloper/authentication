@@ -6,7 +6,7 @@ let checkbox = document.getElementById('checkbox')
 let hidesndshow = document.getElementById('hideansshow')
 let hideandshowconrfirm = document.getElementById('hideandshowconrfirm')
 let tables = document.getElementById('tables')
-let datas = [] && JSON.parse(localStorage.getItem("userdatas"))
+let datas = JSON.parse(localStorage.getItem("userdatas")) || []
 
 function register() {
 
@@ -35,7 +35,7 @@ function register() {
       datas.push(usernames)
       localStorage.setItem("userdatas",JSON.stringify(datas))
       alert(`Sign in successfully Welcome ${fullname.value} please login`)
-  
+      window.location.href = "login.html"
       
       console.log(datas);
     }
